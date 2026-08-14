@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Finanzierung">
+  <style>
+    .s{stroke:#14171A;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .bar{transform-origin:center 38px;animation:rise 3.2s cubic-bezier(.22,1,.36,1) infinite}
+    .b2{animation-delay:.15s}.b3{animation-delay:.3s}
+    .g{stroke:#00D97A}
+    @keyframes rise{0%{transform:scaleY(0)}22%,88%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  </style>
+  <path d="M9 38h30" class="s"/>
+  <path d="M15 38V28" class="s bar" stroke-width="4"/>
+  <path d="M24 38V21" class="s bar b2" stroke-width="4"/>
+  <path d="M33 38V13" class="s g bar b3" stroke-width="4"/>
+</svg>

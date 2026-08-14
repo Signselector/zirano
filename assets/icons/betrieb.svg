@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Betrieb">
+  <style>
+    .s{stroke:#14171A;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .g{stroke:#00D97A}
+    .needle{transform-origin:24px 30px;animation:sweep 3.2s cubic-bezier(.34,1.3,.5,1) infinite}
+    @keyframes sweep{0%{transform:rotate(-72deg)}30%,85%{transform:rotate(38deg)}100%{transform:rotate(-72deg)}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.needle{transform:rotate(38deg)}}
+  </style>
+  <path d="M9 30a15 15 0 0 1 30 0" class="s"/>
+  <path d="M31.5 17.2A15 15 0 0 1 39 30" class="s g" stroke-width="2.5"/>
+  <path d="M9 30h3M36 30h3M24 15v3M13.4 19.4l2.1 2.1M34.6 19.4l-2.1 2.1" class="s" opacity=".5"/>
+  <path d="M24 30L24 20" class="s needle" stroke-width="2"/>
+  <circle cx="24" cy="30" r="2" fill="#14171A"/>
+</svg>

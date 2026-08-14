@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Gewerbeimmobilien">
+  <style>
+    .s{stroke:#14171A;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .w{fill:#00D97A;stroke:none;opacity:.15;animation:win 4s infinite}
+    .w1{animation-delay:.3s}.w2{animation-delay:.9s}.w3{animation-delay:1.5s}.w4{animation-delay:2.1s}.w5{animation-delay:2.7s}
+    @keyframes win{0%{opacity:.15}10%,70%{opacity:1}85%,100%{opacity:.15}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.w{opacity:1}}
+  </style>
+  <path d="M6 40h36" class="s"/>
+  <path d="M10 40V12h14v28" class="s"/>
+  <path d="M24 40V20h14v20" class="s"/>
+  <rect x="13.5" y="16" width="3" height="3" class="w w1"/>
+  <rect x="19" y="16" width="3" height="3" class="w w3"/>
+  <rect x="13.5" y="22" width="3" height="3" class="w w4"/>
+  <rect x="19" y="22" width="3" height="3" class="w w2"/>
+  <rect x="13.5" y="28" width="3" height="3" class="w w5"/>
+  <rect x="28" y="24" width="3" height="3" class="w w2"/>
+  <rect x="33.5" y="24" width="3" height="3" class="w w5"/>
+  <rect x="28" y="30" width="3" height="3" class="w w1"/>
+  <rect x="33.5" y="30" width="3" height="3" class="w w3"/>
+  <path d="M16 40v-4h3v4M30 40v-4h3v4" class="s" opacity=".6"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Bau">
+  <style>
+    .s{stroke:#14171A;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .body{animation:place 3.4s cubic-bezier(.22,1,.36,1) infinite}
+    .led{fill:#00D97A;stroke:none;opacity:0;animation:on 3.4s infinite}
+    .guide{stroke-dasharray:2 3;opacity:.4}
+    @keyframes place{0%{transform:translateY(-10px);opacity:0}12%{opacity:1}35%,88%{transform:translateY(0);opacity:1}100%{transform:translateY(-10px);opacity:0}}
+    @keyframes on{0%,40%{opacity:0}50%,85%{opacity:1}100%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.body{opacity:1}.led{opacity:1}}
+  </style>
+  <path d="M12 40h24" class="s"/>
+  <path d="M18 40v-2.5h12V40" class="s"/>
+  <path d="M24 6v4" class="s guide"/>
+  <g class="body">
+    <rect x="19" y="12" width="10" height="25" rx="1.5" class="s"/>
+    <rect x="21.5" y="15" width="5" height="8" rx="1" class="s" opacity=".5"/>
+    <circle cx="24" cy="30" r="1.6" class="led"/>
+  </g>
+</svg>

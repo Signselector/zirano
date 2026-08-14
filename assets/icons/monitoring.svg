@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Monitoring">
+  <style>
+    .s{stroke:#14171A;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .line{stroke:#00D97A;stroke-dasharray:44;stroke-dashoffset:44;animation:draw 3.2s cubic-bezier(.4,0,.2,1) infinite}
+    .cursor{fill:#00D97A;stroke:none;animation:cpulse 3.2s infinite}
+    @keyframes draw{0%{stroke-dashoffset:44}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:44}}
+    @keyframes cpulse{0%,40%{opacity:0}50%,85%{opacity:1}100%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.line{stroke-dashoffset:0}.cursor{opacity:1}}
+  </style>
+  <rect x="7" y="10" width="34" height="24" rx="2.5" class="s"/>
+  <path d="M19 40h10M24 34v6" class="s"/>
+  <path d="M11 25h7l3-8 4 12 3-6h9" class="line" stroke-width="1.8"/>
+  <circle cx="37" cy="23" r="1.8" class="cursor"/>
+</svg>

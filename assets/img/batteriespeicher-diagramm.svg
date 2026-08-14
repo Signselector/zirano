@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" role="img" aria-label="Schnellladen mit integriertem Batteriespeicher – Systemdiagramm">
+  <style>
+    text{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#14171A}
+    .lbl{font-size:17px;font-weight:600}
+    .sub{font-size:13px;fill:#5A6068}
+    .kpi{font-size:13px;font-weight:600;fill:#00A05C}
+    .wt{fill:#FFFFFF}
+    .gt{fill:#00D97A}
+    .hw{stroke:#14171A;stroke-width:2;fill:#FFFFFF;stroke-linejoin:round}
+    .det{stroke:#8A9099;stroke-width:1.5;fill:none;stroke-linecap:round}
+    .wire{stroke:#C7CDD4;stroke-width:2;fill:none}
+    .pdot{fill:#00D97A}
+    @media (prefers-reduced-motion:reduce){.anim{display:none}}
+  </style>
+
+  <rect width="960" height="540" fill="#FAFBFC"/>
+  <g stroke="#EDF1F4" stroke-width="1">
+    <path d="M0 90h960M0 180h960M0 270h960M0 360h960M0 450h960"/>
+    <path d="M120 0v540M240 0v540M360 0v540M480 0v540M600 0v540M720 0v540M840 0v540"/>
+  </g>
+  <text x="60" y="62" font-size="24" font-weight="700">Schnellladen trotz begrenzter Netzkapazität</text>
+  <text x="60" y="86" class="sub">Intelligentes Lastmanagement · 160 kW Gesamtleistung am Standort</text>
+
+  <g>
+    <rect x="70" y="230" width="110" height="120" rx="6" class="hw"/>
+    <path d="M100 262h50M100 282h50M100 302h30" class="det"/>
+    <circle cx="160" cy="330" r="4" fill="#8A9099"/>
+    <text x="125" y="382" text-anchor="middle" class="lbl">Netzanschluss</text>
+    <text x="125" y="402" text-anchor="middle" class="sub">bestehend · begrenzt</text>
+  </g>
+
+  <g>
+    <rect x="300" y="200" width="130" height="150" rx="6" class="hw"/>
+    <path d="M320 224h90" class="det"/>
+    <rect x="322" y="238" width="86" height="94" rx="3" fill="none" stroke="#C7CDD4" stroke-width="1.5"/>
+    <rect x="326" y="242" width="78" height="86" rx="2" fill="#00D97A" opacity="0.85">
+      <animate attributeName="height" values="26;86;86;60;60;26" keyTimes="0;0.42;0.5;0.86;0.95;1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="302;242;242;268;268;302" keyTimes="0;0.42;0.5;0.86;0.95;1" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="365" y="382" text-anchor="middle" class="lbl">Batteriespeicher</text>
+    <text x="365" y="402" text-anchor="middle" class="sub">260 kWh</text>
+  </g>
+
+  <g>
+    <rect x="530" y="235" width="120" height="110" rx="6" class="hw"/>
+    <rect x="560" y="262" width="60" height="40" rx="4" class="det"/>
+    <path d="M560 282h-14M620 282h14M590 262v-12M590 302v12" class="det"/>
+    <circle cx="590" cy="282" r="5" fill="none" stroke="#00D97A" stroke-width="2">
+      <animate attributeName="r" values="4;7;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="590" y="382" text-anchor="middle" class="lbl">Energiemanagement</text>
+    <text x="590" y="402" text-anchor="middle" class="sub">Intelligentes Lastmanagement</text>
+  </g>
+
+  <g>
+    <rect x="790" y="120" width="70" height="130" rx="6" class="hw"/>
+    <rect x="802" y="136" width="46" height="62" rx="3" fill="#14171A"/>
+    <text x="825" y="164" text-anchor="middle" font-size="11" class="wt" font-weight="600">ZIRANO</text>
+    <text x="825" y="182" text-anchor="middle" font-size="13" class="gt" font-weight="700">80 kW</text>
+    <circle cx="825" cy="222" r="5" fill="none" stroke="#00D97A" stroke-width="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="825" y="278" text-anchor="middle" class="sub">DC-Ladepunkt 1</text>
+
+    <rect x="790" y="310" width="70" height="130" rx="6" class="hw"/>
+    <rect x="802" y="326" width="46" height="62" rx="3" fill="#14171A"/>
+    <text x="825" y="354" text-anchor="middle" font-size="11" class="wt" font-weight="600">ZIRANO</text>
+    <text x="825" y="372" text-anchor="middle" font-size="13" class="gt" font-weight="700">80 kW</text>
+    <circle cx="825" cy="412" r="5" fill="none" stroke="#00D97A" stroke-width="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <text x="825" y="468" text-anchor="middle" class="sub">DC-Ladepunkt 2</text>
+  </g>
+
+  <path id="wGB" d="M180 290H300" class="wire"/>
+  <path id="wBE" d="M430 290H530" class="wire"/>
+  <path id="wE1" d="M650 275C710 260 730 200 790 188" class="wire"/>
+  <path id="wE2" d="M650 305C710 320 730 368 790 378" class="wire"/>
+
+  <g class="anim">
+    <circle r="5" class="pdot">
+      <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.4;1" calcMode="linear"><mpath href="#wGB"/></animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.05;0.36;0.42;1" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="4" class="pdot">
+      <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.15;0.42;1" calcMode="linear"><mpath href="#wGB"/></animateMotion>
+      <animate attributeName="opacity" values="0;0;0.8;0.8;0;0" keyTimes="0;0.15;0.2;0.38;0.44;1" dur="8s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle r="5" class="pdot">
+      <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;0;1;0;1;1" keyTimes="0;0.5;0.62;0.62;0.74;0.74;0.86;1" calcMode="linear"><mpath href="#wBE"/></animateMotion>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.5;0.55;0.84;0.88" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="3" class="pdot" opacity="0.7">
+      <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;0;1;1" keyTimes="0;0.52;0.7;0.7;0.88;1" calcMode="linear"><mpath href="#wGB"/></animateMotion>
+      <animate attributeName="opacity" values="0;0;0.7;0.7;0" keyTimes="0;0.52;0.56;0.86;0.9" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="5" class="pdot">
+      <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;0;1;0;1;1" keyTimes="0;0.55;0.66;0.66;0.77;0.77;0.88;1" calcMode="linear"><mpath href="#wE1"/></animateMotion>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.59;0.86;0.9" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="5" class="pdot">
+      <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;0;1;0;1;1" keyTimes="0;0.58;0.69;0.69;0.8;0.8;0.91;1" calcMode="linear"><mpath href="#wE2"/></animateMotion>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.58;0.62;0.89;0.93" dur="8s" repeatCount="indefinite"/>
+    </circle>
+
+    <g>
+      <rect x="650" y="112" width="156" height="30" rx="15" fill="#00D97A" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.95;0.95;0" keyTimes="0;0.55;0.6;0.92;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="728" y="132" text-anchor="middle" font-size="14" font-weight="700" class="wt" opacity="0">160 kW verfügbar
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.6;0.92;1" dur="8s" repeatCount="indefinite"/>
+      </text>
+    </g>
+    <g>
+      <rect x="192" y="238" width="96" height="26" rx="13" fill="#14171A" opacity="0">
+        <animate attributeName="opacity" values="0;0.85;0.85;0;0" keyTimes="0;0.06;0.36;0.44;1" dur="8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="240" y="256" text-anchor="middle" font-size="12" font-weight="600" class="wt" opacity="0">Netzbezug
+        <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.36;0.44;1" dur="8s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </g>
+
+  <g>
+    <text x="60" y="496" class="kpi">260 kWh Speicher</text>
+    <text x="240" y="496" class="kpi">2× DC-Ladepunkte à 80 kW</text>
+    <text x="500" y="496" class="kpi">160 kW Gesamtleistung</text>
+    <text x="720" y="496" class="kpi">Kein Netzausbau nötig</text>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Planung">
+  <style>
+    .s{stroke:#14171A;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .a{stroke:#00D97A}
+    .scan{animation:scan 3s cubic-bezier(.4,0,.2,1) infinite}
+    .dot{fill:#00D97A;stroke:none;opacity:0}
+    .d1{animation:pop 3s infinite .9s}.d2{animation:pop 3s infinite 1.4s}.d3{animation:pop 3s infinite 1.9s}
+    @keyframes scan{0%{transform:translateY(0);opacity:0}12%{opacity:1}80%{opacity:1}100%{transform:translateY(24px);opacity:0}}
+    @keyframes pop{0%,20%{opacity:0}30%,80%{opacity:1}100%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.dot{opacity:1}}
+  </style>
+  <rect x="8" y="8" width="32" height="32" rx="2" class="s"/>
+  <path d="M14 15h7M14 21h7M14 27h7M14 33h7" class="s" opacity=".45"/>
+  <path d="M27 15h7M27 21h7M27 27h7M27 33h7" class="s" opacity=".45"/>
+  <line x1="10.5" y1="11" x2="37.5" y2="11" class="s a scan"/>
+  <circle cx="17" cy="21" r="1.8" class="dot d1"/>
+  <circle cx="30" cy="27" r="1.8" class="dot d2"/>
+  <circle cx="30" cy="15" r="1.8" class="dot d3"/>
+</svg>

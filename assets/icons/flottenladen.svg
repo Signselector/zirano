@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Flottenladen">
+  <style>
+    .s{stroke:#14171A;stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .b{stroke:#00D97A;fill:none;opacity:0;animation:bolt 3.6s infinite}
+    .b2{animation-delay:.6s}.b3{animation-delay:1.2s}
+    @keyframes bolt{0%{opacity:0}8%,55%{opacity:1}68%,100%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}.b{opacity:1}}
+  </style>
+  <path d="M4 34h40" class="s" opacity=".4"/>
+  <g>
+    <path d="M6 32v-4.5l2-4h8l2 4V32" class="s"/>
+    <path d="M8 27.5h10" class="s" opacity=".5"/>
+    <path d="M12.8 17l-2.6 3.6h3l-2.6 3.6" class="b" stroke-width="1.6"/>
+  </g>
+  <g>
+    <path d="M20 32v-4.5l2-4h8l2 4V32" class="s"/>
+    <path d="M22 27.5h10" class="s" opacity=".5"/>
+    <path d="M26.8 17l-2.6 3.6h3l-2.6 3.6" class="b b2" stroke-width="1.6"/>
+  </g>
+  <g>
+    <path d="M34 32v-4.5l2-4h8l2 4V32" class="s"/>
+    <path d="M36 27.5h10" class="s" opacity=".5"/>
+    <path d="M40.8 17l-2.6 3.6h3l-2.6 3.6" class="b b3" stroke-width="1.6"/>
+  </g>
+</svg>
