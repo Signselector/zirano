@@ -123,10 +123,10 @@
     </g>
   </g>
 
-  <g>
-    <text x="60" y="496" class="kpi">260 kWh Speicher</text>
-    <text x="240" y="496" class="kpi">2× DC-Ladepunkte à 80 kW</text>
-    <text x="500" y="496" class="kpi">160 kW Gesamtleistung</text>
-    <text x="720" y="496" class="kpi">Kein Netzausbau nötig</text>
+  <g text-anchor="middle">
+    <text x="125" y="496" class="kpi">Kein Netzausbau nötig</text>
+    <text x="365" y="496" class="kpi">260 kWh Speicher</text>
+    <text x="590" y="496" class="kpi">160 kW Gesamtleistung</text>
+    <text x="825" y="496" class="kpi">2× 80 kW DC</text>
   </g>
 </svg>
