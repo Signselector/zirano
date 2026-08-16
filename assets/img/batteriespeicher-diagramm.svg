@@ -106,10 +106,10 @@
     </circle>
 
     <g>
-      <rect x="650" y="112" width="156" height="30" rx="15" fill="#00D97A" opacity="0">
+      <rect x="750" y="72" width="150" height="30" rx="15" fill="#00D97A" opacity="0">
         <animate attributeName="opacity" values="0;0;0.95;0.95;0" keyTimes="0;0.55;0.6;0.92;1" dur="8s" repeatCount="indefinite"/>
       </rect>
-      <text x="728" y="132" text-anchor="middle" font-size="14" font-weight="700" class="wt" opacity="0">160 kW verfügbar
+      <text x="825" y="92" text-anchor="middle" font-size="14" font-weight="700" class="wt" opacity="0">160 kW verfügbar
         <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.55;0.6;0.92;1" dur="8s" repeatCount="indefinite"/>
       </text>
     </g>
