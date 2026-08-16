@@ -148,6 +148,7 @@
   .dark .checks .tick::after{border-left-color:var(--green);border-bottom-color:var(--green)}
 
   .svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:18px}
+  @media(max-width:620px){.svc{grid-template-columns:1fr 1fr;gap:12px}.svc figure{padding:20px 8px 14px}.svc img{width:42px;height:42px}.svc figcaption{font-size:12px}}
   .svc figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 16px 20px;text-align:center;
     transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s,border-color .35s}
   .svc figure:hover{transform:translateY(-6px);box-shadow:0 18px 44px -18px rgba(16,20,24,.22);border-color:rgba(0,217,122,.5)}
@@ -183,7 +184,7 @@
   .phone{width:min(270px,70%);margin:0 auto;border-radius:30px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 70px -20px rgba(16,20,24,.35)}
   .phone video{display:block;width:100%}
 
-  .cta-sec{position:relative;overflow:hidden;background:linear-gradient(135deg,#FFFFFF,#F2F6F4 60%,#ECF3EF);padding:150px 44px;text-align:center}
+  .cta-sec{position:relative;overflow:hidden;border-top:1px solid var(--line);background:linear-gradient(135deg,#FFFFFF,#F2F6F4 60%,#ECF3EF);padding:150px 44px;text-align:center}
   .cta-sec canvas{position:absolute;inset:0;width:100%;height:100%}
   .cta-in{position:relative;z-index:1;max-width:880px;margin:0 auto}
   .cta-sec .overline{justify-content:center}
@@ -235,10 +236,10 @@
   </div>
   <div class="stats">
     <div class="stats-in">
-      <div class="stat rv"><b><span data-count="160">0</span><em>kW</em></b><span class="lbl">Ladeleistung je Standort</span></div>
-      <div class="stat rv" style="--d:.08s"><b><span data-count="260">0</span><em>kWh</em></b><span class="lbl">Integrierter Batteriespeicher</span></div>
-      <div class="stat rv" style="--d:.16s"><b>2×<span data-count="80">0</span><em>kW</em></b><span class="lbl">DC-Ladepunkte pro System</span></div>
-      <div class="stat rv" style="--d:.24s"><b><span data-count="100">0</span><em>%</em></b><span class="lbl">Full-Service aus einer Hand</span></div>
+      <div class="stat rv"><b><span data-count="160">160</span><em>kW</em></b><span class="lbl">Ladeleistung je Standort</span></div>
+      <div class="stat rv" style="--d:.08s"><b><span data-count="260">260</span><em>kWh</em></b><span class="lbl">Integrierter Batteriespeicher</span></div>
+      <div class="stat rv" style="--d:.16s"><b>2×<span data-count="80">80</span><em>kW</em></b><span class="lbl">DC-Ladepunkte pro System</span></div>
+      <div class="stat rv" style="--d:.24s"><b><span data-count="100">100</span><em>%</em></b><span class="lbl">Full-Service aus einer Hand</span></div>
     </div>
   </div>
 </header>
@@ -366,13 +367,13 @@
         <svg viewBox="0 0 120 90" aria-hidden="true"><circle cx="60" cy="45" r="4" fill="#101418"/><line x1="60" y1="45" x2="30" y2="24" class="s g an-node" opacity=".5"/><circle cx="30" cy="24" r="3.5" class="gf an-node"/><line x1="60" y1="45" x2="92" y2="22" class="s g an-node d2" opacity=".5"/><circle cx="92" cy="22" r="3.5" class="gf an-node d2"/><line x1="60" y1="45" x2="100" y2="56" class="s g an-node d3" opacity=".5"/><circle cx="100" cy="56" r="3.5" class="gf an-node d3"/><line x1="60" y1="45" x2="66" y2="76" class="s g an-node d4" opacity=".5"/><circle cx="66" cy="76" r="3.5" class="gf an-node d4"/><line x1="60" y1="45" x2="22" y2="62" class="s g an-node d5" opacity=".5"/><circle cx="22" cy="62" r="3.5" class="gf an-node d5"/></svg></article>
     </div>
     <div class="grid3" style="grid-template-columns:1fr 1fr;gap:18px;margin-top:60px">
-      <div class="card rv"><div class="big">1 &rarr; <span data-count="100">0</span>+</div><p>Vom Pilotstandort zum fl&auml;chendeckenden Netz.</p></div>
-      <div class="card rv" style="--d:.1s"><div class="big"><span data-count="99">0</span>,8 %</div><p>Ziel-Verf&uuml;gbarkeit im laufenden Betrieb.</p></div>
+      <div class="card rv"><div class="big">1 &rarr; <span data-count="100">100</span>+</div><p>Vom Pilotstandort zum fl&auml;chendeckenden Netz.</p></div>
+      <div class="card rv" style="--d:.1s"><div class="big"><span data-count="99">99</span>,8 %</div><p>Ziel-Verf&uuml;gbarkeit im laufenden Betrieb.</p></div>
     </div>
   </div>
 </section>
 
-<section class="dark" id="hardware">
+<section id="hardware">
   <div class="wrap">
     <div class="secnum">06</div>
     <p class="overline rv">Die Hardware</p>
