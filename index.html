@@ -128,6 +128,10 @@
     padding:10px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.35);white-space:nowrap}
   .spec i{font-style:normal;color:var(--green);margin-right:7px}
   .light-spec{background:rgba(255,255,255,.9);color:var(--ink);border-color:var(--line);box-shadow:0 12px 34px rgba(16,20,24,.14)}
+  /* Bild und Beschriftung teilen sich ein Element, damit die Schwebe-Animation beide bewegt */
+  .sysfig{position:relative;margin:0;border-radius:20px}
+  .sysfig .spec{transform:translateX(-50%)}
+  @media(max-width:620px){.sysfig .spec{font-size:11px;padding:7px 11px}}
 
   .checks{list-style:none;margin:0 0 36px;padding:0}
   .checks li{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px;color:var(--body)}
@@ -276,11 +280,13 @@
           <li><span class="tick"></span><span><b>Wirtschaftlich:</b> Peak-Shaving senkt die Netzentgelte.</span></li>
         </ul>
       </div>
-      <div class="specwrap persp rv" style="--d:.15s">
-        <img class="media p3d p3d-r float" src="assets/img/system-explosion.webp" alt="ZIRANO Ladesystem: Netzanschluss, Batteriespeicher und zwei DC-Ladesäulen als 3D-Explosionsdarstellung">
-        <div class="spec light-spec" style="top:6%;left:-3%"><i>●</i>Netzanschluss — bestehend</div>
-        <div class="spec light-spec" style="top:42%;right:-4%"><i>●</i>2× DC à 80 kW</div>
-        <div class="spec light-spec" style="bottom:8%;left:8%"><i>●</i>Batteriespeicher 260 kWh</div>
+      <div class="specwrap rv" style="--d:.15s">
+        <figure class="sysfig float">
+          <img class="media" src="assets/img/system-explosion.webp" alt="ZIRANO Ladesystem: Netzanschluss, Batteriespeicher und zwei DC-Ladesäulen als Explosionsdarstellung">
+          <figcaption class="spec light-spec" style="left:19.5%;top:81%"><i>●</i>Netzanschluss</figcaption>
+          <figcaption class="spec light-spec" style="left:50%;top:76%"><i>●</i>260 kWh Speicher</figcaption>
+          <figcaption class="spec light-spec" style="left:78.5%;top:62%"><i>●</i>2× 80 kW DC</figcaption>
+        </figure>
       </div>
     </div>
     <div class="diagram-wrap rv">
